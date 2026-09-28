@@ -1,0 +1,82 @@
+/* Shared by every screen. Coral means action; status colors have one purpose. */
+:root {
+  color-scheme: light;
+  --ink: #25272b;
+  --ink2: #43464d;
+  --paper: #f6f4ef;
+  --white: #fffefa;
+  --line: #d5d3cd;
+  --muted: #61636b;
+  --surface-soft: #eeece7;
+  --surface-hover: #e5e2db;
+  --accent: #a33e2b;
+  --accent-soft: #f8e8df;
+  --action-bg: #ad432e;
+  --action-hover: #903421;
+  --action-text: #ffffff;
+  --success-text: #2e6746;
+  --success-surface: #e7f1e9;
+  --danger-text: #a22e46;
+  --danger-surface: #fae9ed;
+  --warm-text: #805519;
+  --warm-surface: #f5ecd9;
+  --feature-bg: #eeece7;
+  --feature-raised: #e5e2db;
+  --feature-text: var(--ink);
+  --feature-muted: var(--muted);
+  --feature-line: var(--line);
+  --feature-accent: var(--accent);
+  --sidebar-bg: #eeece7;
+  --selection-bg: #f1cdbd;
+  --coral: var(--accent);
+  --coral-dark: var(--accent);
+  --coral-button: var(--action-bg);
+  --coral-button-hover: var(--action-hover);
+  --coral-button-text: var(--action-text);
+  --yellow: var(--warm-text);
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --page-pad: clamp(20px, 3vw, 40px);
+  --shadow-card: 0 6px 20px #181b2110;
+  --scrim: #10121699;
+  --mono: "DM Mono", monospace;
+  --head: "Manrope", sans-serif;
+  /* Code is a dedicated reading surface with the same palette in both themes. */
+  --code-bg: #151a24;
+  --code-header: #232d3c;
+  --code-border: #41516a;
+  --code-text: #e7edf6;
+  --code-muted: #a8b7cb;
+  --code-removed-bg: #392630;
+  --code-removed: #ffabc0;
+  --code-added-bg: #193347;
+  --code-added: #8ddcfa;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f2f1ed;
+  --ink2: #d5d6dc;
+  --paper: #141619;
+  --white: #1d2025;
+  --line: #3d424b;
+  --muted: #b5b9c3;
+  --surface-soft: #272b32;
+  --surface-hover: #323740;
+  --accent: #f4aa90;
+  --accent-soft: #3b2b28;
+  --action-bg: #f0a38a;
+  --action-hover: #ffc0a8;
+  --action-text: #29170f;
+  --success-text: #a4d6b4;
+  --success-surface: #23392d;
+  --danger-text: #ffafbf;
+  --danger-surface: #412a32;
+  --warm-text: #eac58b;
+  --warm-surface: #393123;
+  --feature-bg: #25292f;
+  --feature-raised: #30353d;
+  --sidebar-bg: #1b1e23;
+  --selection-bg: #684536;
+  --shadow-card: 0 6px 20px #00000025;
+}

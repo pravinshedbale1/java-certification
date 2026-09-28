@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141619" />
+    <script>
+      // Apply the saved theme before the first paint. New workspaces start dark.
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("forge-java25-theme") === "light"
+            ? "light"
+            : "dark";
+      } catch {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <meta
+      name="description"
+      content="Forge — an evidence-led practice studio for the Oracle Java SE 25 Developer Professional exam."
+    />
+    <title>Forge — Java 25 certification studio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

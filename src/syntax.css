@@ -1,0 +1,37 @@
+/* One editor palette in both themes keeps Java familiar between study modes. */
+.code-window .token,
+.mut-code-pane .token {
+  font-weight: 400;
+}
+
+:is(.code-window, .mut-code-pane) .token.comment {
+  color: #a8b7cb;
+  font-style: italic;
+}
+:is(.code-window, .mut-code-pane) .token.keyword {
+  color: #c9adff;
+}
+:is(.code-window, .mut-code-pane) .token.class-name {
+  color: #79ddeb;
+}
+:is(.code-window, .mut-code-pane) .token.function {
+  color: #93c5ff;
+}
+:is(.code-window, .mut-code-pane) :is(.token.string, .token.char) {
+  color: #b2df9b;
+}
+:is(.code-window, .mut-code-pane) :is(.token.number, .token.boolean, .token.constant) {
+  color: #f6ca85;
+}
+:is(.code-window, .mut-code-pane) .token.operator {
+  color: #f2a9ce;
+}
+:is(.code-window, .mut-code-pane) .token.punctuation {
+  color: #c7d3e3;
+}
+:is(.code-window, .mut-code-pane) .token.annotation {
+  color: #f5cd94;
+}
+:is(.code-window, .mut-code-pane) :is(.token.namespace, .token.imports) {
+  color: #a9d8ee;
+}
